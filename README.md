@@ -16,6 +16,11 @@ We randomly sampled data from two public available datasets for experiments. For
 
 After processing data into train, validaion, test sets, put them under a "dataset" folder. Refer to `dataloader.py` for data format.
 
+You can also use `download_dataset.sh` to start with the data preprocessed by us:
+```
+$ ./scripts/download_dataset.sh
+```
+
 
 # Train and Evaluate
 To train a BPR-NR model on the Bytedance dataset under the post-click-aware evaluation metric (click-complete as positive observation, click-skip as negative observation, non-click as missing observation):
