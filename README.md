@@ -4,17 +4,17 @@ This is the code repo for our RecSys 2019 paper: [Leveraging Post-click Feedback
 # Install
 We used [OpenRec](https://github.com/ylongqi/openrec) to build our recommendation algorithms. It is built on the [TensorFlow](https://github.com/tensorflow/tensorflow) framework. 
 
-To install the depencies needed for this repo:
+To install the dependencies needed for this repo:
 ```
 $ ./scripts/install.sh
 ```
 
 # Data
-We randomly sampled data from two public available datasets for experiments. For preprocessing, please refer to our paper.
+We randomly sampled data from two publicly-available datasets for experiments. For pre-processing, please refer to our paper.
 - [ByteDance](https://biendata.com/competition/icmechallenge2019/). Contains user interactions with short videos (average 10 seconds in length), including whether or not each video was completed.
 - [Spotify](https://www.aicrowd.com/challenges/spotify-sequential-skip-prediction-challenge). Contains music listening sessions across Spotify users. A user may skip or complete listening to each song.
 
-After processing data into train, validaion, test sets, put them under a "dataset" folder. Refer to `dataloader.py` for data format.
+After processing data into train, validaion, test sets, put them under a "dataset" folder. The directory format is referred to `dataloader.py`.
 
 You can also use `download_dataset.sh` to start with the data preprocessed by us:
 ```
