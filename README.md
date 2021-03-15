@@ -1,5 +1,5 @@
 # Post-click Feeback for Recommender Systems
-This is the code repo for our RecSys 2019 paper: [Leveraging Post-click Feedback for Content Recommendations](https://cornell-nyc-sdl-postclick-recsys.s3.amazonaws.com/paper.pdf). In this paper, we leverage post-click feedback, e.g. skips and completions, to improve the training and evaluation of content recommenders. Check our paper for more details.
+This is the code repo for our RecSys 2019 paper: [Leveraging Post-click Feedback for Content Recommendations](https://drive.google.com/file/d/1mNv8km8sB3ZFuLvmcsL6sH91N9pfxR14/view?usp=sharing). In this paper, we leverage post-click feedback, e.g. skips and completions, to improve the training and evaluation of content recommenders. Check our paper for more details.
 
 # Install
 We used [OpenRec](https://github.com/ylongqi/openrec) to build our recommendation algorithms. It is built on the [TensorFlow](https://github.com/tensorflow/tensorflow) framework. 
@@ -20,7 +20,9 @@ You can also use `download_dataset.sh` to start with the data preprocessed by us
 ```
 $ ./scripts/download_dataset.sh
 ```
-
+**Updated link to processed dataset**: 
+- [Bytedance](https://drive.google.com/file/d/1y61a54PabjYa9Gn0-aW33RxSV1r6hJHa/view?usp=sharing)
+- [Spotify](https://drive.google.com/file/d/1eNiwWIPnWbJuQFDVvf_z-GJmu6AZTDeN/view?usp=sharing)
 
 # Train and Evaluate
 To train a BPR-NR model on the Bytedance dataset under the post-click-aware evaluation metric (click-complete as positive observation, click-skip as negative observation, non-click as missing observation):
