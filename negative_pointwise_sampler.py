@@ -32,13 +32,13 @@ def NegativePointwiseSampler(batch_size, dataset, pos_ratio=0.5, neg_ratio=0.3, 
                     neg_ind += 1
                     ind += 1
 
-            for ind in range(batch_size - num_pos - num_neg):
+            for i in range(batch_size - num_pos - num_neg):
                 user_id = random.randint(0, dataset.total_users()-1)
                 item_id = random.randint(0, dataset.total_items()-1)
                 while dataset.is_positive(user_id, item_id):
                     user_id = random.randint(0, dataset.total_users()-1)
                     item_id = random.randint(0, dataset.total_items()-1)
-                input_npy[ind] = (user_id, item_id, 0.0)
+                input_npy[ind+i] = (user_id, item_id, 0.0)
             
             yield input_npy
         
